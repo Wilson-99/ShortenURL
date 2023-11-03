@@ -1,0 +1,112 @@
+.App {
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.container {
+  width: 800px;
+  padding: 1rem;
+  margin: 0 auto;
+  background-color: #ddd;
+  border-radius: 8px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 5rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: rgba(111, 111, 111, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -4rem;
+}
+
+.error-message {
+  font-size: 1rem;
+  color: #ff0000;
+}
+
+.shorted-url {
+  font-size: 20px;
+}
+
+.shorted-url a {
+  color: #00a9ff;
+  text-decoration: none;
+}
+
+.qr-code {
+  position: relative;
+  margin-left: 18rem;
+}
+
+.social {
+  padding: 5px;
+}
+
+.social-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.btn {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.btn-shorten {
+  margin-top: -4rem;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.social-networking {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-facebook {
+  color: #3b5998;
+}
+
+.btn-whatsapp {
+  color: #25d366;
+}
+
+.btn-twitter {
+  color: #1da1f2;
+}
+
+.btn-linkedin {
+  color: #0a66c2;
+}
+
+.btn-instagram {
+  color: #c32aa3;
+}

@@ -1,0 +1,15 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #000;
+    background-color: white;
+    background: url('./assets/wallper2.avif');
+    background-position: center;
+    background-size: cover;
+  }
+  
