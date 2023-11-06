@@ -8,7 +8,7 @@ import {
 } from "react-icons/bs";
 
 function ShareButtons({ shortUrl }) {
-  // Função para compartilhar no Facebook
+  // Funções para compartilhar 
   const shareOnFacebook = () => {
     const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
       shortUrl
@@ -16,7 +16,6 @@ function ShareButtons({ shortUrl }) {
     window.open(facebookShareUrl, "_blank");
   };
 
-  // Função para compartilhar no Twitter
   const shareOnTwitter = () => {
     const twitterShareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(
       shortUrl
@@ -24,7 +23,6 @@ function ShareButtons({ shortUrl }) {
     window.open(twitterShareUrl, "_blank");
   };
 
-  // Função para compartilhar no Linkedin
   const shareOnLinkedin = () => {
     const LinkedinShareUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
       shortUrl
@@ -32,15 +30,6 @@ function ShareButtons({ shortUrl }) {
     window.open(LinkedinShareUrl, "_blank");
   };
 
-  // Função para compartilhar no Instagram
-  const shareOnInstagram = () => {
-    const InstagramShareUrl = `https://www.instagram.com/share?url=${encodeURIComponent(
-      shortUrl
-    )}`;
-    window.open(InstagramShareUrl, "_blank");
-  };
-
-  // Função para compartilhar no WhatsApp
   const shareOnWhatsApp = () => {
     const whatsappShareUrl = `whatsapp://send?text=${encodeURIComponent(
       shortUrl
@@ -57,9 +46,6 @@ function ShareButtons({ shortUrl }) {
         </button>
         <button className="btn btn-whatsapp" onClick={shareOnWhatsApp}>
           <BsWhatsapp />
-        </button>
-        <button className="btn btn-instagram" onClick={shareOnInstagram}>
-          <BsInstagram />
         </button>
         <button className="btn btn-twitter" onClick={shareOnTwitter}>
           <BsTwitter />

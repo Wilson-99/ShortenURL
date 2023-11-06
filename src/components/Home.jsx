@@ -3,10 +3,6 @@ import { useState, useEffect } from "react";
 import QRCode from "qrcode.react";
 import ShareButtons from "./ShareButtons";
 
-const gameUrl =
-  "https://nba-stats-db.herokuapp.com/api/playerdata/season/2023/?format=json";
-const token = "3a0a96508e33defab26350263b1175a0570d9ccb";
-
 const Home = () => {
   const [originalUrl, setOriginalUrl] = useState("");
   const [shortUrl, setShortUrl] = useState("");
